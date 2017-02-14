@@ -8,14 +8,16 @@ require_once "src/Anagram.php";
 
             );
             $test_Anagram = new Anagram;
-            foreach ($test_list as $test) {
+            // foreach ($test_list as $test) {
                 //Arrange
-                $test_Anagram->checkAnagram();
+                $input1 = "beard";
+                $input2 = "bread";
+                $test_Anagram->checkAnagram($input1, $input2);
                 //Act
-                $result = $test_Anagram->checkAnagram();
+                $result = $test_Anagram->checkAnagram($input1, $input2);
                 //Assert
-                $this->AssertEquals(, $result);
-            }
+                $this->AssertEquals(true, $result);
+            // }
         }
     }
  ?>
