@@ -9,5 +9,7 @@
 | A second word                            | 'bread' | 'b','r','e','a','d' |
 | Check to see if the length of the words are equal | 'b','e','a','r','d'; 'b','r','e','a','d' | true |
 | check if they have the same letters | 'b','e','a','r','d'; 'b','r','e','a','d' | true |
+| check for partial matches | 'd','o','g'; 'b','o','b' | "partial"|
+|  | 'b','o','b'; 't','h','e' | false |
 
 * End specifications

@@ -9,13 +9,13 @@ require_once "src/Anagram.php";
             );
             $test_Anagram = new Anagram;
                 //Arrange
-                $input1 = "bob";
+                $input1 = "the";
                 $input2 = "bbo";
                 $test_Anagram->checkAnagram($input1, $input2);
                 //Act
                 $result = $test_Anagram->checkAnagram($input1, $input2);
                 //Assert
-                $this->AssertEquals(true, $result);
+                $this->AssertEquals(false, $result);
         }
     }
  ?>
